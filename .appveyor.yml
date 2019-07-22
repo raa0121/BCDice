@@ -1,4 +1,5 @@
 install:
+  - gem update --system
   - cd src && bundle install
 
 build_script:
