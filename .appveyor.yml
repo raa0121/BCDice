@@ -1,0 +1,13 @@
+install:
+  - cd src && bundle install
+
+build:
+  - cd src && bundle exec ocra bcdice.rb
+
+before_test:
+  - ruby -v
+  - gem -v
+  - bundle -v
+
+test_script:
+  - cd src && bundle exec rake
