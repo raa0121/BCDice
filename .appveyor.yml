@@ -1,16 +1,9 @@
 install:
   - C:\msys64\usr\bin\curl -LO http://curl.haxx.se/ca/cacert.pem
   - set SSL_CERT_FILE=C:\projects\bcdice\cacart.pem
-  - cd src && bundle install
+  - gem install net-irc wxruby-ruby19 ocra
 
 build_script:
-  - cd src && bundle exec ocra bcdice.rb
+  - ocra src/bcdice.rb --output bcdice.exe
 
-before_test:
-  - ruby -v
-  - gem -v
-  - bundle -v
-  - ocra -v
-
-test_script:
-  - cd src && bundle exec rake
+test: off
