@@ -10,7 +10,6 @@ install:
   - gem install net-irc wxruby-ruby19 ocra
 
 build_script:
-  - ocra src/bcdice.rb --output bcdice.exe &
-  - taskkill /IM ruby.exe
+  - ocra src/bcdice.rb --output bcdice.exe
 
 test: off
