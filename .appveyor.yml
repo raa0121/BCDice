@@ -1,3 +1,6 @@
+environment:
+  RUBYOPT: -EUTF-8
+
 install:
   - C:\msys64\usr\bin\curl -LO http://curl.haxx.se/ca/cacert.pem
   - set SSL_CERT_FILE=C:\projects\bcdice\cacart.pem
