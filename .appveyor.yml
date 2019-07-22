@@ -1,6 +1,8 @@
+environment:
+  SSL_CERT_FILE: C:\Ruby193\cacart.pem
+
 install:
-  - C:\msys64\usr\bin\curl -LO https://github.com/rubygems/rubygems/releases/download/v1.8.30/rubygems-update-1.8.30.gem
-  - gem install --local C:\projects\bcdice\rubygems-update-1.8.30.gem && update_rubygems --no-ri --no-rdoc
+  - C:\msys64\usr\bin\curl -L -o C:\Ruby193\cacart.pem http://curl.haxx.se/ca/cacert.pem
   - cd src && bundle install
 
 build_script:
