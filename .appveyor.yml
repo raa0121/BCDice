@@ -8,6 +8,7 @@ before_test:
   - ruby -v
   - gem -v
   - bundle -v
+  - ocra -v
 
 test_script:
   - cd src && bundle exec rake
