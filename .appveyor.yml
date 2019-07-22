@@ -1,8 +1,8 @@
 environment:
-  SSL_CERT_FILE: C:\Ruby193\cacart.pem
+  SSL_CERT_FILE: C:\projects\bcdice\cacart.pem
 
 install:
-  - C:\msys64\usr\bin\curl -L -o C:\Ruby193\cacart.pem http://curl.haxx.se/ca/cacert.pem
+  - C:\msys64\usr\bin\curl -LO http://curl.haxx.se/ca/cacert.pem
   - cd src && bundle install
 
 build_script:
